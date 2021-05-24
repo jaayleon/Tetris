@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <script src="app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  
   <body>
-    <h3>Score:<span id="score">0</span></h3>
-    <button id="start-button">Start/Pause</button>
+    <p></p>
+ <!-- div container containing all elements on page-->
+    <div class="containAll">
+
+    <div class="scrContainer">
+      <h3>
+        <p>score:<span id="score"> 0</span> </p>
+      </h3>
+    </div>  
+
+  
+    <div class="btnContainer1">
+        <button id="start-button" class="startStyle">start</button>
+      </div>
+    <div class="btnContainer2">
+      <button onClick="history.go(0);" class="retryStyle">retry</button> 
+    </div>
+
+
+<!-- div container (mainContainer) for grid & mini-grid-->
+<div class="gameContainer">
 
     <div class="container">
         <div class="grid">
@@ -213,7 +236,7 @@
             <div></div>
             <div></div>
             <div></div>
-        <div></div>
+            <div></div>
         <div class="taken"></div>
         <div class="taken"></div>
         <div class="taken"></div>
@@ -245,5 +268,19 @@
         <div></div>
         </div>
     </div>
+  </div>
+
+<p></p>
+
+<div class="iconContainer">
+<footer>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-github"></a>
+</footer>
+</div>
+
+</div> <!-- closing div of containAll-->
+
   </body>
 </html>
