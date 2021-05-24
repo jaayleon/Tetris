@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         [width, width*2, width*2+1, width*2+2]
     ]
     
+    // TODO: Turn this into j tetromino
     const jTetromino = [
         [1, width+1, width*2+1, 2],
         [width, width+1, width+2, width*2+2],
