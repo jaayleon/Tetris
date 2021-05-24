@@ -55,7 +55,12 @@
 */
 
 body {
-background: black;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -66,7 +71,63 @@ p {
   color: #39ff14;
 }
 
+a {
+  font-weight:900;
+  font-size: 50px;
+  font-family: 'Anonymous Pro', monospace;
+  text-align: center;
+  color: #39ff14;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+/* Link Styling */
+
+.play {
+  position:absolute;
+  top: 25%;
+  background:none;
+  margin: auto;
+  border:none;
+  cursor: pointer;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  text-align: center;
+  font-size: 4em;
+}
+
+a:link {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 /* button styling */
+
 .startStyle {
   font-size:18px;
   font-weight:100;
@@ -76,6 +137,19 @@ p {
   color: #39ff14;
   border:none;
   margin:10px 0px;
+  padding:0;
+  cursor: pointer;
+}
+
+.pauseStyle {
+  font-size:15px;
+  font-weight:100;
+  font-family: 'Anonymous Pro', monospace;
+  text-align: center;
+  background:none;
+  color: #39ff14;
+  border:none;
+  margin:5px 0px;
   padding:0;
   cursor: pointer;
 }
@@ -96,6 +170,11 @@ p {
 .startStyle:hover {
   opacity: 0.7;
 }
+
+.pauseStyle:hover {
+  opacity:0.7;
+}
+
 .retryStyle:hover {
   opacity: 0.7;
 }
@@ -148,8 +227,21 @@ p {
   align-self: auto;
 }
 
-/* btnContainer2 contains the retry button.*/
+/* btnContainer2 contains the pause button.*/
 .btnContainer2 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/* btnContainer3 contains the retry button.*/
+.btnContainer3 {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -177,6 +269,37 @@ p {
   padding: 100px 60px;
 }
 
+/* homeContainer contains the gameboy image on home page.*/
+.homeContainer {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/* image sizing */
+
+.imgSize{
+   -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.imgSize.large{
+  height: 800px;
+}
+
 /* iconContainer contains icons */
 
 .iconContainer {
@@ -189,6 +312,7 @@ p {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
+  margin: 15px 0px;
 }
 
 /* Font awesome button icons */

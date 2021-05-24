@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png"  href="img/favicon-32x32.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tetris AI</title>
   </head>
   
   <body>
@@ -27,10 +27,12 @@
     <div class="btnContainer1">
         <button id="start-button" class="startStyle">start</button>
       </div>
-    <div class="btnContainer2">
+      <div class="btnContainer2">
+        <button id="pause-button" class="pauseStyle">pause</button>
+      </div>
+    <div class="btnContainer3">
       <button onClick="history.go(0);" class="retryStyle">retry</button> 
     </div>
-
 
 <!-- div container (mainContainer) for grid & mini-grid-->
 <div class="gameContainer">
@@ -270,17 +272,18 @@
     </div>
   </div>
 
-<p></p>
-
 <div class="iconContainer">
 <footer>
-  <a href="#" class="fa fa-linkedin"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-github"></a>
+  <a href="landing.html" class="fa fa-home"></a>
+  <a href="https://www.linkedin.com/in/j-leon-batulayan-a31648181/" class="fa fa-linkedin"></a>
+  <a href="https://twitter.com/revr3v" class="fa fa-twitter"></a>
+  <a href="https://github.com/jaayleon" class="fa fa-github"></a>
 </footer>
 </div>
 
 </div> <!-- closing div of containAll-->
 
+
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
