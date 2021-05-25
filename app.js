@@ -7,18 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.querySelector('#start-button')  // # lets us select an  'id'
     const pauseBtn = document.querySelector('#pause-button')
     const width = 10
+    const initialRotation = 0
     let nextRandom = 0
     let timerId // it is set to null
-    let score = 0
+    let score = 0  // initial score is set to 0
     
     const lTetromino = [
-        [1, width+1, width*2+1, 2],
-        [width, width+1, width+2, width*2+2],
-        [1, width+1, width*2+1, width*2],
-        [width, width*2, width*2+1, width*2+2]
+        [width, width+1, width+2, 2*width],
+        [0, 1, width+1, 2*width +1],
+        [2, width, width+1, width+2],
+        [1, width+1, 2*width + 1, 2*width+2]
     ]
     
-    // TODO: Turn this into j tetromino
+    
     const jTetromino = [
         [1, width+1, width*2+1, 2],
         [width, width+1, width+2, width*2+2],

@@ -4,7 +4,7 @@
 
 .grid {
   width: 200px;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-wrap: wrap;
   background: black;
@@ -19,8 +19,14 @@
   width: 20px;
 }
 
+/*  pregrid is temporarily red for testing */
+/* I also don't know how to make it invisible :3 */
+.grid .pregrid {
+  background: red;
+}
+
 .tetromino {
-  background:#39ff14 ;
+  background: #39ff14;
 }
 
 .mini-grid {
@@ -55,26 +61,26 @@
 */
 
 body {
-    background: black;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    margin: 0;
-    padding: 0;
+  background: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  font-weight:100;
+  font-weight: 100;
   font-size: 30px;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   text-align: center;
   color: #39ff14;
 }
 
 a {
-  font-weight:900;
+  font-weight: 900;
   font-size: 50px;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   text-align: center;
   color: #39ff14;
 }
@@ -88,11 +94,11 @@ img {
 /* Link Styling */
 
 .play {
-  position:absolute;
+  position: absolute;
   top: 25%;
-  background:none;
+  background: none;
   margin: auto;
-  border:none;
+  border: none;
   cursor: pointer;
   -webkit-order: 0;
   -ms-flex-order: 0;
@@ -129,41 +135,41 @@ a:active {
 /* button styling */
 
 .startStyle {
-  font-size:18px;
-  font-weight:100;
-  font-family: 'Anonymous Pro', monospace;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Anonymous Pro", monospace;
   text-align: center;
-  background:none;
+  background: none;
   color: #39ff14;
-  border:none;
-  margin:10px 0px;
-  padding:0;
+  border: none;
+  margin: 10px 0px;
+  padding: 0;
   cursor: pointer;
 }
 
 .pauseStyle {
-  font-size:15px;
-  font-weight:100;
-  font-family: 'Anonymous Pro', monospace;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Anonymous Pro", monospace;
   text-align: center;
-  background:none;
+  background: none;
   color: #39ff14;
-  border:none;
-  margin:5px 0px;
-  padding:0;
+  border: none;
+  margin: 5px 0px;
+  padding: 0;
   cursor: pointer;
 }
 
 .retryStyle {
-  font-size:15px;
-  font-weight:100;
-  font-family: 'Anonymous Pro', monospace;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Anonymous Pro", monospace;
   text-align: center;
-  background:none;
+  background: none;
   color: #39ff14;
-  border:none;
-  margin:0px 0px 20px 0px;
-  padding:0;
+  border: none;
+  margin: 0px 0px 20px 0px;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -172,7 +178,7 @@ a:active {
 }
 
 .pauseStyle:hover {
-  opacity:0.7;
+  opacity: 0.7;
 }
 
 .retryStyle:hover {
@@ -180,7 +186,7 @@ a:active {
 }
 
 /*containAll contains all elements*/
-.containAll{
+.containAll {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -284,8 +290,8 @@ a:active {
 
 /* image sizing */
 
-.imgSize{
-   -webkit-order: 0;
+.imgSize {
+  -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
   -webkit-flex: 0 1 auto;
@@ -296,7 +302,7 @@ a:active {
   align-self: auto;
 }
 
-.imgSize.large{
+.imgSize.large {
   height: 800px;
 }
 
@@ -322,11 +328,11 @@ a:active {
   text-align: center;
   text-decoration: none;
   padding: 0;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-linkedin {
@@ -340,16 +346,3 @@ a:active {
 .fa-github {
   color: #39ff14;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
