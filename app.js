@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     const jTetromino = [
-        [1, width+1, width*2+1, 2],
-        [width, width+1, width+2, width*2+2],
-        [1, width+1, width*2+1, width*2],
-        [width, width*2, width*2+1, width*2+2]
+        [width, width+1, width+2, 2*width + 2],
+        [2*width, 1, width+1, 2*width +1],
+        [0, width, width+1, width+2],
+        [1, width+1, 2*width + 1, 2]
     ]
 
     const sTetromino = [
-        [1, width+1, width*2+1, 2],
-        [width, width+1, width+2, width*2+2],
-        [1, width+1, width*2+1, width*2],
+        [width+1, width+2, width*2, width*2+1],
+        [width+1, 2*width+2, 2*width+1, 3*width+2],
+        [2*width+1, 2*width+2,3*width+1, 3*width],
         [width, width*2, width*2+1, width*2+2]
     ]
 
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         [width,width+1,width+2,width+3]
     ]
 
-    const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
+    const theTetrominoes = [lTetromino, jTetromino, sTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
 
     let currentPosition = 4
-    let random = Math.floor(Math.random()*theTetrominoes.length) // gives us the index of a random tetromino
-    let current = theTetrominoes[random][0] // l tetrominoes first rotation
+    let random = 2 //Math.floor(Math.random()*theTetrominoes.length) // gives us the index of a random tetromino
+    let current =  theTetrominoes[random][0] // the tetrominoes first rotation
     let currentRotation = 0
     
 
