@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.querySelector('#start-button')  // # lets us select an  'id'
     const pauseBtn = document.querySelector('#pause-button')
     const width = 10
+    const center = Math.floor(width/2) - 1
     const initialRotation = 0
     let nextRandom = 0
     let timerId // it is set to null
@@ -19,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         [1, width+1, 2*width + 1, 2*width+2]
     ]
     
-    
     const jTetromino = [
         [width, width+1, width+2, 2*width + 2],
         [2*width, 1, width+1, 2*width +1],
@@ -28,17 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const sTetromino = [
-        [width+1, width+2, width*2, width*2+1],
-        [width+1, 2*width+2, 2*width+1, 3*width+2],
-        [2*width+1, 2*width+2,3*width+1, 3*width],
-        [width, width*2, width*2+1, width*2+2]
+        [width+1, width+2, 2*width, 2*width+1],
+       [1, width+1, width+2, 2*width+2],
+       [width+1, width+2, 2*width, 2*width+1],
+       [1, width+1, width+2, 2*width+2]
     ]
 
     const zTetromino = [
-        [0,width,width+1,width*2+1],
-        [width+1, width+2,width*2,width*2+1],
-        [0,width,width+1,width*2+1],
-        [width+1, width+2,width*2,width*2+1]
+        [width, width+1, 2*width+1, 2*width+2],
+        [2, width+1, width+2, 2*width+1],
+        [width, width+1, 2*width+1, 2*width+2],
+        [2, width+1, width+2, 2*width+1],
     ]
     
     const tTetromino = [
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const theTetrominoes = [lTetromino, jTetromino, sTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
 
     let currentPosition = 4
-    let random = 2 //Math.floor(Math.random()*theTetrominoes.length) // gives us the index of a random tetromino
+    let random = 3 //Math.floor(Math.random()*theTetrominoes.length) // gives us the index of a random tetromino
     let current =  theTetrominoes[random][0] // the tetrominoes first rotation
     let currentRotation = 0
     
