@@ -6,7 +6,7 @@ interface Props {
 } 
 
 const Display: FC<Props>  = ({gameOver, text}) => {
-	return <>{ text } </>
+	return <div>{ text } </div>
 }
 
 export default Display

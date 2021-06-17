@@ -1,11 +1,17 @@
 import { FC } from 'react';  // This is react's function type
+import { StyledCell} from './styles/StyledCell'
+import { TETROMINOS } from '../tetrominoes'
 
 interface Props {
-	type?: number;
+	type: any;
 } 
 
 const Cell: FC<Props>  = ({ type }) => {
-	return <div> cell </div>
+	return (
+        // idk what typeof means
+        <StyledCell typeof = {'L'} color = {TETROMINOS['L'].color}>cell</StyledCell>
+    ) 
+    
 }
 
 export default Cell

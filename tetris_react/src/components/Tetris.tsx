@@ -1,4 +1,5 @@
 import { FC } from 'react';  // This is react's function type
+import { createStage } from '../gameHelpers';
 
 // Components
 import Stage from './Stage'
@@ -13,7 +14,7 @@ interface Props {
 const Tetris: FC<Props>  = ({foo, bar}) => {
 	return (
     <div>
-        <Stage />
+        <Stage stage={createStage()}/>
         <aside>
             <div>
                 <Display text = "Score" />
